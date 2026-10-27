@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="th" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f5f7fb"><meta name="description" content="อ่านสรุป The Blue Illusion ภาษาไทย ครบ 16 บทและบทพิเศษ พร้อมข้อสังเกตแยกจากเนื้อหาหนังสือ ปรับตัวอักษร โหมดมืด และอ่านต่อจากจุดเดิม">
+<title>The Blue Illusion — อ่านสรุปภาษาไทย</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231e4fe0'/%3E%3Cpath d='M9 8h8a4 4 0 0 1 0 8h-8zm0 8h9a4 4 0 0 1 0 8H9z' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('blue-theme')||'light'}catch(e){}</script>
+<script src="content.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#article">ข้ามไปเนื้อหา</a>
+<header class="topbar">
+ <a class="brand" href="#overview" aria-label="The Blue Illusion หน้าบทนำ"><span class="brand-mark">B</span><span>THE BLUE ILLUSION<small>ฉบับสรุปภาษาไทย</small></span></a>
+ <div class="top-actions"><label class="font-label" for="font-select">ขนาดตัวอักษร</label><select id="font-select" aria-label="ขนาดตัวอักษร"><option value="16">เล็กที่สุด</option><option value="17">เล็กมาก</option><option value="18">เล็ก</option><option value="19">ปกติ</option><option value="21">ใหญ่</option><option value="23">ใหญ่มาก</option><option value="26">ใหญ่ที่สุด</option></select><button id="menu" class="button mobile-menu" aria-expanded="false" aria-controls="sidebar">สารบัญ</button><button id="theme" class="button icon-button" aria-label="เปิดโหมดมืด" title="เปลี่ยนโหมดสี"><span id="theme-icon">◐</span><span id="theme-label">โหมดมืด</span></button></div>
+</header>
+<div class="layout">
+<aside id="sidebar" class="sidebar" aria-label="สารบัญหนังสือ">
+ <div class="sidebar-heading"><span>สารบัญ</span><span class="chapter-count">16 บท + บทพิเศษ</span></div>
+ <button id="resume" class="resume" hidden><span>อ่านต่อจากจุดเดิม</span><strong id="resume-title"></strong></button>
+ <nav id="toc" aria-label="เลือกบท"></nav>
+ <div class="sidebar-foot">ต้นฉบับโดย<br><strong>ธีระ ศิริพลับพลาพร</strong><span>เนื้อหาเรียบเรียงใหม่จากหนังสือ 157 หน้า</span></div>
+</aside>
+<button id="overlay" class="overlay" aria-label="ปิดสารบัญ" hidden></button>
+<main id="main">
+ <div class="progress-track" role="progressbar" aria-label="ความคืบหน้าการอ่านทั้งเล่ม" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress-bar"></div></div>
+ <div class="reading-area">
+  <header class="book-hero" id="book-top">
+   <p class="eyebrow">ธีระ ศิริพลับพลาพร · ฉบับสรุปภาษาไทย</p>
+   <div class="book-intro"><figure class="book-cover"><a href="images/book-cover.webp" target="_blank" rel="noopener" aria-label="เปิดภาพปกหนังสือขนาดใหญ่"><img src="images/book-cover.webp" width="918" height="1188" alt="ปกหนังสือ Blue Zone The Blue Illusion เบื้องหลังคำลวงสีฟ้า" fetchpriority="high"></a><figcaption>ปกหนังสือต้นฉบับ</figcaption></figure><div class="book-intro-copy">   <h1>The Blue Illusion</h1>
+   <p class="hero-subtitle">จากรอยหมึกสีน้ำเงิน<br>สู่คำถามต่อธุรกิจแห่งความอายุยืน</p>
+   <div class="hero-meta"><span>ผู้เขียน: ธีระ ศิริพลับพลาพร (เฮียโต้ง)</span><span>ต้นฉบับ 157 หน้า</span></div>
+</div></div>
+   <div class="completion"><div><span>เนื้อหาสรุป</span><strong>ครบ 16 บท + บทพิเศษ</strong></div><div class="complete-line"></div><p>เรียบเรียงเพื่ออ่านทำความเข้าใจ พร้อมข้อสังเกตแยกจากต้นฉบับ</p></div>
+   <div class="hero-actions"><a class="button primary" href="#overview">เริ่มอ่านภาพรวม ↓</a><button class="button" id="hero-resume" hidden>อ่านต่อจากจุดเดิม</button></div>
+  </header>
+  <article id="article" tabindex="-1" aria-label="เนื้อหาสรุปหนังสือ"></article>
+  <footer class="reader-footer"><span>THE BLUE ILLUSION <b> / </b> ฉบับสรุป</span><a href="#sources">เครดิตและแหล่งข้อมูล</a></footer>
+ </div>
+</main>
+</div>
+<a class="back-top button" href="#book-top" aria-label="กลับต้นเล่ม">↑ <span>ต้นเล่ม</span></a>
+<div id="status" class="sr-only" aria-live="polite"></div>
+<noscript><div class="nojs">กรุณาเปิด JavaScript เพื่ออ่านเนื้อหาและเลือกบท</div></noscript>
+</body></html>
